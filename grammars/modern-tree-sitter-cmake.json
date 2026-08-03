@@ -1,0 +1,23 @@
+{
+  "name": "CMake",
+  "scopeName": "source.cmake",
+  "type": "modern-tree-sitter",
+  "parser": "tree-sitter-cmake",
+  "injectionRegex": "^(cmake)$",
+  "fileTypes": ["cmake", "CMakeLists.txt", "cmake.in"],
+  "comments": {
+    "start": "# "
+  },
+  "treeSitter": {
+    // Pin a tag or a full SHA, never a branch. Verify the ref is on the main
+    // line before trusting it — `gh api repos/OWNER/REPO/compare/<ref>...HEAD`
+    // reporting `diverged` or a nonzero `behind` means it is not.
+    "parserSource": "github:uyha/tree-sitter-cmake#v0.7.4",
+    "wasmBuildTool": "tree-sitter-cli#v0.26.11",
+    "grammar": "tree-sitter-cmake/tree-sitter-cmake.wasm",
+    "highlightsQuery": "tree-sitter-cmake/highlights.scm",
+    "foldsQuery": "tree-sitter-cmake/folds.scm",
+    "indentsQuery": "tree-sitter-cmake/indents.scm",
+    "tagsQuery": "tree-sitter-cmake/tags.scm"
+  }
+}
