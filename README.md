@@ -4,7 +4,7 @@ CMake language support.
 
 ## Features
 
-- **Grammars**: provides Tree-sitter grammars.
+- **Grammars**: provides Tree-sitter grammars, built from [tree-sitter-cmake](https://github.com/uyha/tree-sitter-cmake).
 - **Syntax highlighting**: commands, variable references, quoted and bracket arguments, and the operators that only mean something inside `if()`.
 - **Folding**: folds function, macro, conditional and loop blocks.
 - **Auto-indentation**: indents block bodies and lines `else` and `elseif` up with their `if`.
