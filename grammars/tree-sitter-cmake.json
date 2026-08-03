@@ -1,7 +1,7 @@
 {
   "name": "CMake",
   "scopeName": "source.cmake",
-  "type": "modern-tree-sitter",
+  "type": "tree-sitter",
   "parser": "tree-sitter-cmake",
   "injectionRegex": "^(cmake)$",
   "fileTypes": ["cmake", "CMakeLists.txt", "cmake.in"],
