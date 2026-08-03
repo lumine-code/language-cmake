@@ -10,6 +10,10 @@ CMake language support.
 - **Auto-indentation**: indents block bodies and lines `else` and `elseif` up with their `if`.
 - **Symbol navigation**: function and macro definitions.
 
+## Installation
+
+To install `language-cmake` search for _language-cmake_ in the Install pane of the Lumine settings or run `lumine --install lumine-code/language-cmake`.
+
 ## Services
 
 - **hyperlink.injection** (`^1.0.0`): consumed to highlight URLs inside CMake files as clickable links.
