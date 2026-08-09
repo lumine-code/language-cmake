@@ -9,7 +9,7 @@ const path = require("path");
 
 describe("CMake Tree-sitter grammar", () => {
   beforeEach(async () => {
-    await atom.packages.activatePackage("language-cmake");
+    await lumine.packages.activatePackage("language-cmake");
   });
 
   it("tokenizes the fixture", async () => {
