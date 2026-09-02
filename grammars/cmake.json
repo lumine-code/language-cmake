@@ -3,7 +3,7 @@
   "scopeName": "source.cmake",
   "type": "tree-sitter",
   "parser": "tree-sitter-cmake",
-  "injectionRegex": "^(cmake)$",
+  "injectionNames": ["cmake"],
   "fileTypes": ["cmake", "CMakeLists.txt", "cmake.in"],
   "comments": {
     "start": "# "
@@ -14,10 +14,10 @@
     // reporting `diverged` or a nonzero `behind` means it is not.
     "parserSource": "github:uyha/tree-sitter-cmake#v0.7.4",
     "wasmBuildTool": "tree-sitter-cli#v0.26.13",
-    "grammar": "tree-sitter-cmake/tree-sitter-cmake.wasm",
-    "highlightsQuery": "tree-sitter-cmake/highlights.scm",
-    "foldsQuery": "tree-sitter-cmake/folds.scm",
-    "indentsQuery": "tree-sitter-cmake/indents.scm",
-    "tagsQuery": "tree-sitter-cmake/tags.scm"
+    "grammar": "cmake.wasm",
+    "highlightsQuery": "cmake-highlights.scm",
+    "foldsQuery": "cmake-folds.scm",
+    "indentsQuery": "cmake-indents.scm",
+    "tagsQuery": "cmake-tags.scm"
   }
 }
