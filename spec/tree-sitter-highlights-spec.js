@@ -29,12 +29,12 @@ describe("CMake Tree-sitter highlights", () => {
     return editor.scopeDescriptorForBufferPosition([row, column]).getScopesArray();
   }
 
-  function rawCaptures(startRow, endRow) {
-    const layer = languageMode.rootLanguageLayer;
-    return layer.queries.highlightsQuery.captures(layer.tree.rootNode, {
+  async function rawCaptures(startRow, endRow) {
+    const groups = await editor.getGrammarQueryCaptureGroups("highlightsQuery", {
       startPosition: new Point(startRow, 0),
       endPosition: new Point(endRow, 0),
     });
+    return groups.find(({ grammar }) => grammar === editor.getGrammar())?.captures ?? [];
   }
 
   it("preserves command-sensitive argument scopes", async () => {
@@ -75,7 +75,7 @@ custom(alpha beta)`);
         "\r\n",
       ),
     );
-    const captures = rawCaptures(3000, 3006);
+    const captures = await rawCaptures(3000, 3006);
     expect(captures.length).toBeLessThanOrEqual(64);
     expect(
       captures.every(
