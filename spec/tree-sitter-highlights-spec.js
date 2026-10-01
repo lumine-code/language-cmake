@@ -30,11 +30,14 @@ describe("CMake Tree-sitter highlights", () => {
   }
 
   async function rawCaptures(startRow, endRow) {
-    const groups = await editor.getGrammarQueryCaptureGroups("highlightsQuery", {
-      startPosition: new Point(startRow, 0),
-      endPosition: new Point(endRow, 0),
-    });
-    return groups.find(({ grammar }) => grammar === editor.getGrammar())?.captures ?? [];
+    const queryCaptures = (await editor.getGrammar().getQuery("highlightsQuery")).captures(
+      editor.languageMode.tree.rootNode,
+      {
+        startPosition: new Point(startRow, 0),
+        endPosition: new Point(endRow, 0),
+      },
+    );
+    return queryCaptures;
   }
 
   it("preserves command-sensitive argument scopes", async () => {

@@ -16,6 +16,7 @@
     "wasmBuildTool": "tree-sitter-cli#v0.27.0",
     "grammar": "cmake.wasm",
     "highlightsQuery": "cmake-highlights.scm",
+    "injectionsQuery": "cmake-injections.scm",
     "foldsQuery": "cmake-folds.scm",
     "indentsQuery": "cmake-indents.scm",
     "tagsQuery": "cmake-tags.scm"
