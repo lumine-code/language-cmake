@@ -10,6 +10,8 @@ CMake language support.
 - **Auto-indentation**: indents block bodies and lines `else` and `elseif` up with their `if`.
 - **Symbol navigation**: function and macro definitions.
 
+![CMake syntax highlighting at the default editor font size.](.github/demo.png)
+
 ## Installation
 
 To install `language-cmake` search for it in the Install pane of the Lumine settings, or run the command `lumine --install lumine-code/language-cmake`.

@@ -1,0 +1,16 @@
+{
+  "title": "language-cmake",
+  "description": "CMake syntax highlighting in the editor.",
+  "recordedOn": "2026-10-13",
+  "sourceRevision": "2211fd47a26ac3e479fad4b1bc6b1716d6f4cce6",
+  "mode": "normal",
+  "fontSettings": "default",
+  "images": [
+    {
+      "file": "demo.png",
+      "label": "CMake syntax highlighting at the default editor font size.",
+      "width": 1100,
+      "height": 362
+    }
+  ]
+}
