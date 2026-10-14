@@ -1,16 +1,61 @@
 {
   "title": "language-cmake",
-  "description": "CMake syntax highlighting in the editor.",
-  "recordedOn": "2026-10-13",
-  "sourceRevision": "2211fd47a26ac3e479fad4b1bc6b1716d6f4cce6",
+  "description": "CMake syntax highlighting at the default editor font size.",
+  "recordedOn": "2026-10-14",
+  "sourceRevision": "bee2f312c8b6f96fc659376615f7c8f59c4bedb1",
+  "themeSourceRevision": "14a69683b0e3238e2bc128fbfae3866c1e4ee9c6",
   "mode": "normal",
   "fontSettings": "default",
+  "scenario": "demo.js",
+  "recipeHash": "70bebb27a20212e8dbeb7dc123881b77573ca7aa89d820d9e35e5744d828299c",
+  "environment": {
+    "platform": "win32",
+    "arch": "x64",
+    "electron": "44.7.0",
+    "chrome": "152.0.7977.130",
+    "devicePixelRatio": 1,
+    "locale": "en-GB",
+    "fontFamily": "Fira Code, Menlo, DejaVu Sans Mono, Consolas, monospace",
+    "fontSize": 14,
+    "themes": ["one-day-syntax", "one-day-ui"]
+  },
+  "viewport": { "width": 1100, "height": 362 },
+  "cornerRadius": 10,
+  "sources": {
+    "editor": {
+      "revision": "c4d7a05fe6960ae6fb041981d6cf13e9c0286b17",
+      "dirty": true,
+      "workingTreeHash": "af0ec098e764416df9522f3c6e555050b520e4700da382b2b983b2ff3742bd0a"
+    },
+    "package": {
+      "revision": "bee2f312c8b6f96fc659376615f7c8f59c4bedb1",
+      "dirty": true,
+      "workingTreeHash": "21475629043a6445a03c74392b9f824d07df8333e91bc78f1fb83b24ca5ed4f4"
+    },
+    "language-cmake": {
+      "revision": "bee2f312c8b6f96fc659376615f7c8f59c4bedb1",
+      "dirty": true,
+      "workingTreeHash": "21475629043a6445a03c74392b9f824d07df8333e91bc78f1fb83b24ca5ed4f4"
+    },
+    "one-theme": {
+      "revision": "14a69683b0e3238e2bc128fbfae3866c1e4ee9c6",
+      "dirty": true,
+      "workingTreeHash": "25d6ed50595d6b10f7d53e41dbbe8f92dcb5c0e911871356f3e6138e5c76df57"
+    }
+  },
+  "fixtures": [
+    {
+      "file": "example.cmake",
+      "sha256": "7c5900baf7d87e97fa603a49497b8f4bfd4d0910f23e60e8da12a13e497a16fc"
+    }
+  ],
   "images": [
     {
       "file": "demo.png",
       "label": "CMake syntax highlighting at the default editor font size.",
       "width": 1100,
-      "height": 362
+      "height": 362,
+      "sha256": "37b0949f8a76fe79bc2c2bf0bf48176359276be598807718d48c1e58185b3cb8"
     }
   ]
 }
