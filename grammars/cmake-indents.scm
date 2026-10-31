@@ -1,17 +1,6 @@
-; Every block command opens with `(` on its own line and closes with a
-; matching `end*` command, so the block keywords drive the indent rather than
-; the parentheses, which open and close on the same line.
+; Branch and end keywords return to the owning block's indentation.
 [
-  (function)
-  (macro)
-  (if)
-  (elseif)
-  (else)
-  (foreach)
-  (while)
-] @indent
-
-[
+  (endblock)
   (endfunction)
   (endmacro)
   (endif)
@@ -20,3 +9,16 @@
   (endforeach)
   (endwhile)
 ] @dedent
+
+; Reindent code without rewriting whitespace that belongs to multiline text.
+([(quoted_argument) (bracket_argument) (bracket_comment)] @preserve
+  (#is? indent.reindent true)
+  (#is-not? indent.matchesCurrentRow startPosition)
+  (#set! indent.force true))
+
+; Parentheses drive continuation lines; same-line command pairs cancel out.
+"(" @indent
+")" @dedent
+
+(")" @indent
+  (#is? test.childOfType "block_command function_command macro_command if_command elseif_command else_command foreach_command while_command"))
