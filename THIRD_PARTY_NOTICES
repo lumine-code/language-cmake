@@ -1,10 +1,11 @@
 ----- BEGIN THIRD-PARTY LICENSE: parser:uyha_tree-sitter-cmake -----
 Source: https://github.com/uyha/tree-sitter-cmake
-Revision: 58993af75218bc99a1f5a04c832a5937e7c422cb
+Commit: a3ec2b2144daf7132e7ee824d8cab9610523d10f
+Ref: a3ec2b2144daf7132e7ee824d8cab9610523d10f
 
 Original file: LICENSE
 
-The MIT License (MIT)
+ The MIT License (MIT)
 
 Copyright (c) 2025 Uy Ha
 
