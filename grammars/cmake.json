@@ -13,7 +13,7 @@
     // line before trusting it — `gh api repos/OWNER/REPO/compare/<ref>...HEAD`
     // reporting `diverged` or a nonzero `behind` means it is not.
     "parserSource": "github:uyha/tree-sitter-cmake#a3ec2b2144daf7132e7ee824d8cab9610523d10f",
-    "wasmBuildTool": "tree-sitter-cli#v0.27.1",
+    "wasmBuildTool": "tree-sitter-cli#v0.27.2",
     "grammar": "cmake.wasm",
     "highlightsQuery": "cmake-highlights.scm",
     "injectionsQuery": "cmake-injections.scm",
