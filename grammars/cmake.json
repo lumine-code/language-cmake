@@ -19,6 +19,7 @@
     "injectionsQuery": "cmake-injections.scm",
     "foldsQuery": "cmake-folds.scm",
     "indentsQuery": "cmake-indents.scm",
+    "tagsQuerySupportsLocalPath": true,
     "tagsQuery": "cmake-tags.scm"
   }
 }
